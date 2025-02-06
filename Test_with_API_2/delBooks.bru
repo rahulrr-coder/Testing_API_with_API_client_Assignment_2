@@ -1,0 +1,11 @@
+meta {
+  name: delBooks
+  type: http
+  seq: 3
+}
+
+delete {
+  url: http:localhost:3000/books/1
+  body: json
+  auth: none
+}

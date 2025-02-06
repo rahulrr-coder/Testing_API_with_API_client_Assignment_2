@@ -1,0 +1,22 @@
+meta {
+  name: PostBooks
+  type: http
+  seq: 4
+}
+
+post {
+  url: http:localhost:3000/books/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "book_id": "101",
+    "title": "Kalvium Diaries",
+    "author": "Rahul",
+    "genre": "LIFE",
+    "year": 2024,
+    "copies": 5
+  }
+}
